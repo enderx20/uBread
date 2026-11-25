@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('assets/SFPRODISPLAYREGULAR.OTF') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  
+}
+
+
+body{
+    font-family:'SF Pro Display';
+}
+
+
+.title{
+    
+    margin-top: 60px;
+}
+
+.title h1{
+    margin-left: 40px;
+    font-size: 2.8rem;
+}
+
+
+.products{
+    
+    flex:1;
+    display: flex;
+    min-width: 0;       
+    overflow-y: auto;
+    height:fit-content;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.product{
+    
+    margin-top: 30px;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(243, 243, 243);
+    margin-left: 80px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+
+.product h1{
+    font-family:'SF Pro Display';
+    margin-top: 10px;
+    
+    
+}
+
+
+.product img{
+    width: 270px;          /* stała szerokość dla każdej ikony */
+    height: 270px;         /* stała wysokość (dopasowana do buttona 50px) */
+    object-fit: contain;  /* skaluje obrazek proporcjonalnie wewnątrz ramki */
+    flex-shrink: 0;   
+}
+
+.product .mini{
+    width: 200px;
+    height: 200px;
+}
+
+
+.buy-button{
+    background-color: white;
+    border:1.5px solid black;
+    border-radius: 15px;
+    height: 30px;
+    width: 80px;
+    
+    cursor: pointer;
+
+}
+
+.mini-button{
+    margin-top: 65px;
+    
+
+}
+
+:hover.buy-button{
+    background-color: black;
+    color: white;
+
+}
